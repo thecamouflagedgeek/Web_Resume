@@ -1,0 +1,243 @@
+.header 
+{
+    height: 50px;
+    position: fixed;
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+    align-items:center;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    border-bottom: 1px solid white;
+    padding:15px 0px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.nav-links
+{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover 
+{
+    color: #f04e30;
+}
+
+.about-section 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-container
+{
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+.about-text
+{
+    flex: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.about-header
+{
+    font-size: 36px;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+}
+
+.content
+{
+    flex:1;
+}
+.about-text p 
+{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-image img 
+{
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    animation: slideInRight 1s ease-in-out;
+}
+
+
+@keyframes fadeIn 
+{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft 
+{
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight 
+{
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.profile-image
+{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom: 20px;
+
+}
+
+.content 
+{
+    position: relative;
+    z-index: 2;
+    margin-top: 100px; 
+}
+
+.title
+ {
+    font-family:'Playfair Display',serif;
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.subtitle
+ {
+    font-family:'Playfair Display',serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.buttons 
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.button
+ {
+    background-color: transparent;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor:pointer;
+    transition: background-color 0.3s, color 0.3s,border-color 0.3s;
+}
+
+.button:hover 
+{
+    background-color: white;
+    color: white;
+    border-color:white; 
+}
+
+
+.profile-image
+ {
+    width: 300px; 
+    height: auto;
+    border-radius: 50%; 
+ }
+
+.section-container
+{
+    max-width:650px;
+    color:white;
+    font-family:'Playfair Display',serif;
+    margin:20px auto;
+    text-align:left;
+    padding:20px;
+    opacity:0.8;
+}
+
+.image-container img 
+{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%; 
+}
+
+#skills-section 
+{
+    padding: 15px;
+    background-color:black;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+.overlay 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+body 
+{
+    background-image: url("images/neon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer.footer 
+{
+    background-color: #000;
+    color: #fff;
+    height:40px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    margin-top: auto;
+}

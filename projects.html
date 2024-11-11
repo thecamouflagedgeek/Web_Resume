@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Hazel Sequeira</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body
+         {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background: url('images/n.jpg') no-repeat center center/cover;
+            background-size: 400% 400%;
+            text-align: left;
+        }
+
+        .projects-container {
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .projects-header {
+            text-align: center;
+            font-size: 48px;
+            font-family: 'Playfair Display', serif;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .project {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .project img {
+            width: 20%;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project img:hover {
+            transform: scale(1.05);
+        }
+
+        .project-description {
+            flex: 1;
+        }
+
+        .project-description h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .project-description p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeOut
+         {
+            from 
+            {
+                opacity: 1;
+            }
+            to
+             {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="projects-container">
+        <h1 class="projects-header">Projects</h1>
+        <div class="project">
+            <img src="images/Hygenie.jpg" alt="Hygenie - Sanitary Pad Dispenser and Disposer Machine">
+            <div class="project-description">
+                <h2>Hygenie - Sanitary Pad Dispenser and Disposer Machine</h2>
+                <p>This innovative project aims to provide a safe and convenient sanitary solution for women in public spaces by dispensing and disposing of sanitary pads with hygiene and efficiency.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="images/Lab.png" alt="Virtual Lab Project for College">
+            <div class="project-description">
+                <h2>Virtual Lab Project for College</h2>
+                <p>The Virtual Lab simulates laboratory experiments for students, allowing them to learn and experiment in a safe, virtual environment.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="images/Recipe.png" alt="Mama's Kitchen - Recipe Recommender and Health Tracker Website">
+            <div class="project-description">
+                <h2>Mama's Kitchen - Recipe Recommender and Health Tracker Website</h2>
+            </div>
+        </div>
+        <div class="project">
+            <img src="images/street.jpg" alt="Automated Street Lighting Model">
+            <div class="project-description">
+                <h2>Automated Street Lighting Model</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Hazel Sequeira</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body 
+        {
+            background: url('images/p.jpg') no-repeat center center/cover;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid white;
+            padding-bottom: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .button {
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 25px;
+            padding: 12px 25px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.05);
+        }
+
+        .button:active {
+            transform: scale(0.95);
+        }
+
+        .content {
+            display: none;
+            overflow: hidden;
+            animation: slideDown 0.5s forwards;
+        }
+
+        .content p {
+            font-size: 16px;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        @keyframes slideDown {
+            from { height: 0; opacity: 0; }
+            to { height: auto; opacity: 1; }
+        }
+    </style>
+    <script>
+        function toggleContent(button) {
+            const content = button.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>SKILLS</h1>
+        <p>SOFTWARE AND APP DEVELOPMENT</p>
+        <div class="buttons">
+            <button class="button" onclick="toggleContent(this)">TECHNICAL ></button>
+            <div class="content">
+                <p>1.Java ---------- Learning Data Structures & Alogrithms , Memory Management etc</n></p>
+                <p>2.Python ----------- Learnt Object Oriented Programming , String Manipulation , Problems with DSA</n></p>
+                <p>3.Spring ------------ API calls and used in App development for Virtual Lab projet and Digital Library</p>
+                <p>4.Flask ------------- REST API's nd used in App development projects</p>
+                <p>5.HTML & CSS ------------ complete web development in various projects</p>
+            </div>
+            
+            <button class="button" onclick="toggleContent(this)">NON-TECHNICAL ></button>
+            <div class="content">
+                <p> - Participated in national level debate competition , CRMD and won as the first runner up</n></p>
+                <p> - Orator in school and college and have participated in various Eloucation and Skill development competitions</n></p>
+                <p> - Leadership skills by being a part of Team Vaayushastra , an aeromodelling team which participates in the SAE , USA International Competition</n></p>
+                <p> - Certified in Digital Marketing and Content Writing as well as Social Media Management with SEO</p>
+                <p> - Well experienced in design through experience and skills in tools such as Blender for animation and Adobe Photoshop</n></p>
+                <p> - Internship experience as content writing intern and Social Media Manager at Praadhva IT Consultant Services and LearnYard</p>
+            </div>
+
+            <button class="button" onclick="toggleContent(this)">TOOLS ></button>
+            <div class="content">
+                <p>Familiar with Git,VS Code & Docker</n></p>
+                <p>Experienced in design through tools like Adobe Photoshop,Figma,Canva, Blender, & AutoCAD.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
